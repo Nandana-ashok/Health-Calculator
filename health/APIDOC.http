@@ -1,0 +1,48 @@
+###
+POST http://127.0.0.1:8000/bmi/
+Content-Type: application/json
+
+{
+    "weight" : 70,
+    "height" : 175
+}
+
+
+###
+POST http://127.0.0.1:8000/bmr/
+Content-Type: application/json
+
+{
+    "weight" : 70,
+    "height" : 175,
+    "age": 25 ,
+    "gender" : "male"
+}
+
+###
+POST http://127.0.0.1:8000/calories/
+Content-Type: application/json
+
+{
+    "bmr": 1673.75,
+    "activity_level": "moderate"
+}
+
+
+###
+POST http://127.0.0.1:8000/macros/
+Content-Type: application/json
+
+{
+    "calories": 2594.31,
+    "weight": 70
+}
+
+
+###
+POST http://127.0.0.1:8000/water-intake/
+Content-Type: application/json
+
+{
+    "weight": 70
+}
